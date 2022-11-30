@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DomZdravlja">
+  <DataContextMoniker Name="/DomZdravljaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="766b36e5-60a2-48fa-85a8-425128a95244" absoluteBounds="0.75, 1.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DomZdravljaDataContext/Firma" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d6a6a567-b941-4b9c-a74d-0f065f885bd5" absoluteBounds="0.765, 1.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d27cee1c-0469-4d93-a584-add67f7ef8a6" absoluteBounds="3.5, 1.125, 2, 1.5785953776041663">
+      <DataClassMoniker Name="/DomZdravljaDataContext/Paket" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6817b99e-e2a0-43de-8f99-715530f84639" absoluteBounds="3.515, 1.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a829e595-8052-46f4-8c3b-94658432bc8f" absoluteBounds="6.25, 0.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DomZdravljaDataContext/Pacijent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7975aae0-b69d-4c8d-9f5c-6b3501c8af2f" absoluteBounds="6.265, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.94314697265625); (3.5 : 1.94314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DomZdravljaDataContext/Firma/Firma_Paket" />
+      <nodes>
+        <classShapeMoniker Id="766b36e5-60a2-48fa-85a8-425128a95244" />
+        <classShapeMoniker Id="d27cee1c-0469-4d93-a584-add67f7ef8a6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.91429768880208); (6.25 : 1.91429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DomZdravljaDataContext/Paket/Paket_Pacijent" />
+      <nodes>
+        <classShapeMoniker Id="d27cee1c-0469-4d93-a584-add67f7ef8a6" />
+        <classShapeMoniker Id="a829e595-8052-46f4-8c3b-94658432bc8f" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
